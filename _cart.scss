@@ -1,0 +1,218 @@
+.cart-order-buttons {
+	@extend .styles-input;
+	border-color: black;
+	background-color: transparent;
+	font-family: $main-font;
+}
+
+.top-cart {
+    height: 400px;
+	background-image: url("images/header-cart.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: $main-font;
+	color: $bg-text-color;
+}
+h1 {
+	width: 760px;
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 70px;
+	margin-top: 64px;
+	margin-bottom: 16px;
+}
+.header {
+	height: 76px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.5px solid white;
+}
+
+.cart-order {
+	margin-top: 64px;
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    gap: $main-gap;
+}
+
+.cart-order__cart {
+	grid-column: span 8;
+}
+.cart-order__cart-heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.cart-order__cart-items {
+	display: grid;
+	grid-column: span 8;
+}
+.cart-order__cart-item {
+	display: flex;
+	border-top: 1px solid #CACDD8;
+	flex-direction: row;
+	margin-top: 32px;
+	padding-top: 32px;
+}
+.cart-order__cart-img {
+	width: 173px;
+	height: 173px;
+}
+.cart-order__cart-descr {
+	height: 173px;
+	margin-left: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-family: $main-font;
+	.cart-order__cart-h3 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+	.cart-order__cart-prc {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.cart-order__cart-lnk {
+		font-size: 14px;
+		text-decoration: underline;
+		margin-right: 30px;
+	}
+	.cart-order__cart-lnk:hover {
+		text-decoration: none;
+	}
+}
+.cart-order__cart-text {
+	font-size: 14px;
+	line-height: 17px;
+	color: #888888;
+	margin-bottom: 12px;
+	width: 276px;
+}
+.cart-order__cart-links {
+	flex-direction: row;
+}
+.cart-order__cart-number {
+	width: 71px;
+	height: 51px;
+	background-color: #F7F6F6;
+	border-radius: 10px;
+	border: 0.5px solid #F7F6F6;
+	margin-left: 235px;
+	outline: none;
+	&::placeholder {
+		font-family: $second-font;
+		color: black;
+		font-weight: bold;
+		text-align: center;
+	}
+	&:focus {
+		text-align: center;
+	}
+}
+.cart-order__cart-buttons {
+	margin-top: 50px;
+	display: flex;
+}
+.cart-order__cart-button {
+	@extend .cart-order-buttons;
+	margin-right: 7px;
+	width: 200px;
+	height: 37px;
+	font-size: 14px;
+	&:hover {
+		background-color: black;
+		color: white;
+		transition: 0.25s;
+	}
+}
+
+.cart-order__order {
+	background-color: #F7F6F6;
+	grid-column: span 4;
+	align-items: center;
+	padding-top: 42px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 25px;
+}
+.cart-order__order-form {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.cart-order__order-h3 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+}
+.cart-order__order-input {
+	background-color: transparent;
+	border-bottom: 0.5px solid #CACDD8;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	width: 100%;
+	height: 20px;
+	outline: none;
+}
+.cart-order__order-total {
+	margin-top: 64px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+.cart-order__order-sum {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.cart-order__order-text {
+	font-size: 24px;
+	margin-right: 10px;
+}
+.cart-order__order-text-b {
+	font-size: 24px;
+	font-weight: 500;
+}
+.cart-order__button {
+	@extend .cart-order-buttons;
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	animation: button-animation 5s ease 0s 1 normal forwards;
+	&:hover {
+		background-color: black;
+		color: white;
+		transition: 0.25s;
+	}
+}
+@keyframes button-animation {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}

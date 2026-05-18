@@ -1,0 +1,72 @@
+@media (max-width: 1024px) {
+    .centering {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+     .goods .goods__content {
+        gap: 38px 29px;
+    }
+
+    .header__nav-mobile {
+        display: none;
+    }
+    
+    .top-index {
+        background-image: url("images/header-tablet.jpg");
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .top-catalog {
+        background-image: url("images/header-catalog-tablet.jpg");
+    }
+    
+    .special-goods__content {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 38px 29px;
+    }
+    .goods__content {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    .goods-list__content {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .filter-form {
+        right: 0;
+    }
+    
+    .cart-order {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 64px;
+    }
+    .cart-order__cart-item {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-order__order {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-order__button {
+        margin-bottom: 15vh;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-logo {
+        display: none;
+    }
+
+    .furniture__item, .furniture__item_1, .furniture__item_2, 
+    .furniture__item_3, .furniture__item_4, .furniture__item_5 {
+        height: 268px;
+        width: auto;
+    }
+}
